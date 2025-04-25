@@ -7,18 +7,61 @@
 </head>
 
 <body>
-  <h1>Calculadora IMC</h1>
-  <form>
-    <input type="number" id="peso" placeholder="Digite seu peso (kg)">
-    <input type="number" id="altura" placeholder="Digite sua altura (m)">
-  </form>
+  <div class="container">
+    <h1>Calculadora IMC</h1>
+    <div class="input-box">
+        <input type="number" id="peso" placeholder="Digite seu peso (kg)">
+    </div>
 
-  <button id="btnEnviar">ENVIAR</button>
-  <div class="resultado">
-    <h2 id="resultado"></h2>
+    <div class="input-box">
+        <input type="number" id="altura" placeholder="Digite sua altura (m)">
+    </div>
+            
+   
+    <button id="btnEnviar">ENVIAR</button>
+
+        
+    <div class="resultado">
+      <h2 id="resultado"></h2>
+    </div>
+
+    <div class="tabela">
+      <table>
+        <thead>
+          <tr>
+              <th>IMC</th>
+              <th>Classificações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Menor do que 18,5</td>
+              <td>Abaixo do peso normal</td>
+            </tr>
+            <tr>
+                <td>18,5 - 24,9</td>
+                <td>Peso normal</td>
+            </tr>
+            <tr>
+              <td>25,0 - 29,9</td>
+              <td>Excesso de peso</td>
+            </tr>
+            <tr>
+              <td>30,0 - 34,9</td>
+              <td>Obesidade classe I</td>
+            </tr>
+            <tr>
+              <td>35,0 - 39,9</td>
+              <td>Obesidade classe II</td>
+            </tr>
+            <tr>
+              <td>Maior ou igual a 40,0</td>
+              <td>Obesidade classe III</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
   </div>
-  
-
 </body>
 <script src="js/script.js"></script>
 </html>
