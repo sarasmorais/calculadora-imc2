@@ -3,11 +3,11 @@ function calculaImc(altura, peso) {
 }
 
 function resultadoTela() {
-    const pesoInformado = document.getElementById("peso").value;
-    const alturaInformada = document.getElementById("altura").value;
+    const altura = document.getElementById("peso").value;
+    const peso = document.getElementById("altura").value;
     const resultado = document.getElementById("resultado");
 
-    const imc = calculaImc(alturaInformada, pesoInformado);
+    const imc = calculaImc();
     let mensagem = `Seu IMC é ${imc}. `;
 
     resultado.textContent = mensagem;
